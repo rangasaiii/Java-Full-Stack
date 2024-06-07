@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Database System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('your-background-image-url.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        
+        form {
+            width: 50%;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        
+        th {
+            background-color: #00796b;
+            color: #ffffff;
+        }
+        
+        td input[type="text"], 
+        td input[type="number"], 
+        td select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        td input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        td input[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+        
+        td[colspan="2"] {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Database System</h1>
+    <form action="./InsertData" method="post">
+        <table>
+            <tr>
+                <th>Enter Roll No:</th>
+                <td><input type="number" name="rollno" required /></td>
+            </tr>
+            <tr>
+                <th>Enter Name:</th>
+                <td><input type="text" name="name" required /></td>
+            </tr>
+            <tr>
+                <th>Enter Section:</th>
+                <td>
+                    <select name="section" required>
+                        <option value="">Select Section</option>
+                        <option>A</option>
+                        <option>B</option>
+                        <option>C</option>
+                        <option>D</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Enter Gender:</th>
+                <td><input type="text" name="Gender" min="0" max="100" required /></td>
+            </tr>
+            <tr>
+                <th>Enter Curriculum Plan:</th>
+                <td><input type="text" name="CurriculumPlan" min="0" max="100" required /></td>
+            </tr>
+            <tr>
+                <th>Enter Department</th>
+                <td><input type="text" name="Department" min="0" max="100" required /></td>
+            </tr>
+            <tr>
+                <th>Enter Cgpa:</th>
+                <td><input type="number" name="Cgpa" min="0" max="100" required /></td>
+            </tr>
+            <tr>
+                <th>Enter Semester:</th>
+                <td><input type="number" name="Semester" min="0" max="100" required /></td>
+            </tr>
+            <tr>
+                <th>Enter Course Name:</th>
+                <td><input type="text" name="CourseName" min="0" max="100" required /></td>
+            </tr>
+            <tr>
+                <th>Enter College:</th>
+                <td><input type="text" name="College" min="0" max="100" required /></td>
+            </tr>
+            <tr>
+                <th>Enter Address:</th>
+                <td><input type="text" name="Address" min="0" max="100" required /></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Submit" /></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
